@@ -21,7 +21,7 @@
 <h1 class="text-4xl text-center my-8 uppercase dark:text-white">Svelte Pokedex</h1>
 <p class="text-center my-8">List of pokemon</p>
 
-<input class="w-full rounded-md text-lg p-4 border-2 border-gray-800 my-4 dark:text-black" type="text" bind:value={searchTerm} placeholder="Search">
+<input id="search-term" class="w-full rounded-md text-lg p-4 border-2 border-gray-800 my-4 dark:text-black" type="text" bind:value={searchTerm} placeholder="Search">
 
 <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
     {#each filteredPokemon as pokeman }
